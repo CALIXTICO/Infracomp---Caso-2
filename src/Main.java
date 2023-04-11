@@ -9,7 +9,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Write the file name: ");
         String fileName = sc.nextLine();
-        File file = new File("./src/data/"+fileName);
+        File file = new File("data/"+fileName);
         Scanner fileReader = new Scanner(file);
         List<String> list = new ArrayList<String>();
 
