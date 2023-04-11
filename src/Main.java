@@ -62,7 +62,9 @@ public class Main {
             for (int i = 4; i < list.size(); i++) {
                 String[] values = list.get(i).split(",");
                 String page = values[1];
+                System.out.println(page);
             }
+
     
             fileReader.close();
             sc.close();
