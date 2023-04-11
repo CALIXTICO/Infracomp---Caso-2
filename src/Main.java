@@ -6,8 +6,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    public final static ArrayList<Integer> references = new ArrayList<Integer>();
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -19,7 +17,6 @@ public class Main {
 
         if (mode == 1) {
             ModeOne();
-            System.out.println("Pages reference: "+ references);
         } else if (mode == 2) {
             ModeTwo();
         } else {
@@ -65,7 +62,6 @@ public class Main {
             for (int i = 4; i < list.size(); i++) {
                 String[] values = list.get(i).split(",");
                 String page = values[1];
-                references.add(Integer.parseInt(page));
             }
     
             fileReader.close();
