@@ -57,12 +57,14 @@ public class Main {
             System.out.println("NC size: "+nc);
             System.out.println("NR size: "+nr);
     
-            // Iterate through the rest of the file and print the values
-    
+            String pages = "";
+
+            long tiempoPrevio = System.currentTimeMillis();
+
             for (int i = 4; i < list.size(); i++) {
                 String[] values = list.get(i).split(",");
                 String page = values[1];
-                
+                pages=pages+page;
             }
 
     
